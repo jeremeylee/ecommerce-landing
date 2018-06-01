@@ -3,6 +3,14 @@ body {
     !important
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
 .nav {
     display: flex;
     list-style-type: none;
@@ -21,15 +29,25 @@ body {
 }
 
 .logo {
+    font-size: 200%;
     color: #57c5a0;
-    margin-left: 15%;
-    margin-right: auto;
+    padding: 5px;
+    margin: 0 auto 0 15%;
 }
 
 .login {
     display: flex;
+    padding: 10px;
     margin-right: 15%;
 }
+
+.login li {
+    padding-right: 10px;
+}
+
+.login li a:visited {
+    color: white;
+} 
 
 .search-container {
     width: 24px;
@@ -46,10 +64,17 @@ body {
 }
 
 .nav-bar li {
+    font-size: 150%;
+    font-weight: bold;
     margin-top: 0;
-    padding: 20px 30px 20px 0;
+    margin-bottom: 0;
+    padding: 20px;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
+}
+
+.nav-bar a:visited {
+    color: black;
 }
 
 .landing-img {
@@ -61,7 +86,7 @@ body {
     background-size: cover;
 }
 
-.landing-text {
+.overlay-text {
     justify-content: center;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.7);
@@ -69,11 +94,10 @@ body {
     height: 40%;
 }
 
-.landing-img p {
+.landing-img .overlay-text p {
     font-weight: bold;
     font-size: 550%;
     color: white;
-    /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
     text-align: center;
     vertical-align: middle;
     line-height: 0.01;
@@ -88,9 +112,35 @@ body {
 }
 
 
-.categories img {
-    padding: 50px;
+.categories-img {
+    display: flex;
+    border: 50px;
     border-radius: 10%;
-    width: 300px;
+    width: 350px;
     height: 250px;
+    background-size: cover;
+}
+
+.must-have {
+    margin: 50px;
+    background-image: url('https://images.unsplash.com/photo-1499175898579-d743fea6e7dc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=31c3458f8b1610479a4fd0ddcb09988a&auto=format&fit=crop&w=1868&q=80');
+}
+
+.sale {
+    margin: 50px;
+    background-image: url('https://images.unsplash.com/photo-1511556820780-d912e42b4980?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=04aebe9a22884efa1a5f61e434215597&auto=format&fit=crop&w=634&q=80');
+}
+
+.shop-all {
+    margin: 50px;
+    background-image: url('https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a2c2e882a1115c02831a800290a47121&auto=format&fit=crop&w=1050&q=80');
+}
+
+.overlay-text p {
+    font-weight: bold;
+    font-size: 250%;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0.5;
 }
